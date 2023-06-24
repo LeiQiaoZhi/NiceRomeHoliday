@@ -22,7 +22,10 @@
     /* bold */
     font-weight: 600;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: #047295;
+    color: #F2E8D6;
+    transition: all 0.3s;
 }
 
 
@@ -36,6 +39,7 @@
 }
 
 .foldable-header:hover {
-    background-color: #f5f5f5;
+    color: #FDC449;
+    background-color: #015373;
     cursor: pointer;
 }
