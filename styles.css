@@ -1,0 +1,9 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #88888875;
+}

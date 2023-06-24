@@ -1,0 +1,41 @@
+.foldable-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    line-height: 1.5em;
+    transition: opacity 0.3s, max-height 0.3s;
+    margin: 0px 20px 0px 20px;
+}
+
+.foldable-content p {
+    margin: 10px 0px 10px 0px;
+    line-height: 1.8em;
+}
+
+.foldable-header.open+.foldable-content {
+    opacity: 1;
+    max-height: 500px;
+    /* Adjust the value based on your content's maximum height */
+}
+
+.foldable-header {
+    /* bold */
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.foldable-header .triangle {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.foldable-header.open .triangle {
+    transform: rotate(90deg);
+}
+
+.foldable-header:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}

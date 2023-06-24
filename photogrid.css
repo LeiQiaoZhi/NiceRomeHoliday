@@ -1,0 +1,56 @@
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.photo-grid-item {
+    position: relative;
+    overflow: hidden;
+    /* height: 300px; */
+    /* Set a fixed height for consistent photo grid items */
+}
+
+.photo-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.photo-grid-item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.photo-grid-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3,
+.overlay p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.photo-single {
+    /* float: left; */
+    width: 40%;
+}
