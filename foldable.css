@@ -28,6 +28,16 @@
     transition: all 0.3s;
 }
 
+.foldable-header.italy {
+    /* bold */
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3c6d3d;
+    color: #F2E8D6;
+    transition: all 0.3s;
+}
+
 
 .foldable-header .triangle {
     display: inline-block;
@@ -41,5 +51,11 @@
 .foldable-header:hover {
     color: #FDC449;
     background-color: #015373;
+    cursor: pointer;
+}
+
+.foldable-header.italy:hover {
+    color: #FDC449;
+    background-color: #1c511d;
     cursor: pointer;
 }
