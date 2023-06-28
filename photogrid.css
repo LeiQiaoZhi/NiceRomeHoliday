@@ -17,6 +17,7 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
+    border-radius: 5px;
 }
 
 .photo-grid-item:hover img {
